@@ -14,6 +14,10 @@
     {{!-- Styles'n'Scripts --}}
     <link rel="stylesheet" type="text/css" href="{{asset "main/css/main.css"}}" />
 
+    <link rel="stylesheet" type="text/css" href="{{asset "main/css/prism.css"}}" />
+    <script src="{{asset "main/js/clipboard.min.js"}}"></script>
+    <script defer src="{{asset "main/js/prism.min.js"}}"></script>
+
     {{!-- This tag outputs SEO meta+structured data and other important settings --}}
     {{ghost_head}}
 
@@ -38,7 +42,7 @@
                         {{#if @site.facebook}}
                             <li><a href="{{facebook_url @site.facebook}}" class="icon fa-facebook" title="Facebook"><span class="label">Facebook</span></a></li>
                         {{/if}}
-                        <li><a href="/{{@site.url}}/rss/" class="icon fa-rss" target="_blank" rel="noopener"><span class="label" title="RSS">RSS</span></a></li>
+                        <li><a href="{{@site.url}}/rss/" class="icon fa-rss" target="_blank" rel="noopener"><span class="label" title="RSS">RSS</span></a></li>
                     </ul>
                 </header>
 

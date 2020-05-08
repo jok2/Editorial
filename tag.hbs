@@ -28,6 +28,7 @@ into the {body} of the default.hbs template --}}
             {{/if}}
             <h3><a href="{{url}}">{{title}}</a></h3>
             <p>{{excerpt words="33"}}</p>
+            <p class="post-meta"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD.MM.YYYY'}}</time> {{#if tags}}on {{tags separator=" | "}}{{/if}}</p>
             <ul class="actions special">
                 <li><a href="{{url}}" class="button">Full Story</a></li>
             </ul>

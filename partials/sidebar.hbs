@@ -19,7 +19,9 @@
                     {{#foreach mini_post}}
                     <article>
                         <h3><a href="{{url}}">{{title}}</a></h3>
-                        <p>{{excerpt words="15"}}</p>
+                        <p>{{excerpt words="15"}}<br/>
+                        <spanp class="post-meta"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD.MM.YYYY'}}</time></spanp>
+                        </p>
                     </article>
                     {{/foreach}}
                 {{/get}}
@@ -42,6 +44,7 @@
         <footer id="footer">
             <p class="copyright">&copy; {{@site.title}} - All rights reserved<br>
             Design: <a href="https://html5up.net" target="_blank" rel="noopener">HTML5 UP</a>, Published with <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a></p>
+            <p><a href="/impressum/">Impressum</a> | <a href="/datenschutzhinweis/">Datenschutzhinweis</a></p>
         </footer>
 
     </div>
